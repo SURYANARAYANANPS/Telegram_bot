@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 import subprocess
 import os
 
-api_id = os.getenv("APP_ID")          # Replace with your API ID
+api_id = int(os.getenv("APP_ID"))          # Replace with your API ID
 api_hash = os.getenv("API_HASH")    # Replace with your API HASH
 bot_token = os.getenv("BOT_TOKEN")  # Replace with your BotFather token
 
