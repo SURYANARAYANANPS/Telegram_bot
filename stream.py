@@ -2,9 +2,9 @@ from pyrogram import Client, filters
 import subprocess
 import os
 
-api_id = 24322144          # Replace with your API ID
-api_hash = "2b3a4e84eab9c466d1d903178ebb931f"    # Replace with your API HASH
-bot_token = "8126645456:AAFDw2c2_tHEoT1esT1WGO8kOL1TBqOQNjE"  # Replace with your BotFather token
+api_id = os.getenv("APP_ID")          # Replace with your API ID
+api_hash = os.getenv("API_HASH")    # Replace with your API HASH
+bot_token = os.getenv("BOT_TOKEN")  # Replace with your BotFather token
 
 app = Client("streambot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
